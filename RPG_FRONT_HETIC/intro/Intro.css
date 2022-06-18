@@ -1,0 +1,79 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "PF Tempesta Seven", sans-serif;
+  color: white;
+}
+
+body {
+  overflow: hidden;
+  max-width: 1440px;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  margin-top: 15%;
+  background-color: rgb(49, 49, 49);
+  background-image: url(/RPG_FRONT_HETIC/assets/BG_med.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.speak {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -150px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 10%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.skip {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 70px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+#text {
+  font-size: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
+}
+
+.monsterH {
+  width: 400px;
+  height: 250px;
+}
+.monsterGIF {
+  position: fixed;
+  right: 0%;
+  bottom: 0;
+}

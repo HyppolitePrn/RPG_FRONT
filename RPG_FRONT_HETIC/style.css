@@ -1,0 +1,306 @@
+body {
+  max-width: 1440px;
+  height: 99vh;
+  background-image: url(./assets/chandelier.gif);
+  font-family: "PF Tempesta Seven", sans-serif;
+}
+
+/* TITRE ----------------- */
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  color: white;
+  margin: 0;
+}
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* MAP ----------------- */
+
+.map {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(4, 40px);
+  width: 400px;
+  height: 160px;
+  border: 2px solid #fff500;
+  background-image: url(assets/Mini_map.PNG);
+  background-size: 400px;
+}
+
+#triangle-1 {
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid rgb(255, 0, 0);
+}
+
+#triangle-2 {
+  margin-left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid rgb(202, 0, 0);
+}
+
+/* INFOS ----------------- */
+
+.infos {
+  width: 230px;
+  /* margin-left: 15px; */
+}
+.info {
+  background-color: rgba(0, 0, 0, 0.616);
+  width: 200px;
+  height: 480px;
+  border: 2px solid #fff500;
+  overflow: auto;
+}
+.quetes {
+  text-align: center;
+  margin-left: 10px;
+}
+.info > a {
+  font-size: 12px;
+  margin-left: 80px;
+}
+
+/* SCREEN ----------------- */
+
+.screen {
+  width: 930px;
+  height: 480px;
+  border: 6px solid black;
+  margin-right: 20px;
+}
+
+/*------------------------ BOTTOM ELEMENTS -------------------------------*/
+
+.bottomTools {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* LOAD ----------------- */
+
+.load {
+  background-color: rgba(0, 0, 0, 0.616);
+  color: #008000;
+  cursor: pointer;
+  width: 200px;
+  height: 35px;
+  border: 2px solid #ff0000;
+  text-align: center;
+}
+.soundOff {
+  color: red;
+}
+
+/* INVENTAIRE ----------------- */
+
+.inventory {
+  width: 200px;
+  color: white;
+  height: 429px;
+  margin-top: 20px;
+  border: 2px solid skyblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+.inventory div {
+  border: 2px solid orange;
+  width: 60px;
+  height: 50px;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+
+.key,
+.potion,
+.potionMana {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+/* COMMANDES ----------------- */
+
+.command {
+  width: 200px;
+  height: 90px;
+  border: 2px solid #147481;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
+.outils > .inventaire {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.haut,
+.bas,
+.gauche,
+.droite,
+.inventaire,
+.potion {
+  width: 20px;
+  height: 20px;
+}
+.attaque {
+  height: 15px;
+  width: 80px;
+  margin-left: 45px;
+}
+.bas,
+.gauche,
+.droite {
+  position: relative;
+  left: 25px;
+  margin-top: 25px;
+}
+.gauche {
+  margin-right: 5px;
+}
+.droite {
+  margin-left: 5px;
+}
+#z,
+#d,
+#s,
+#q,
+#i {
+  width: 30px;
+  height: 30px;
+}
+#i {
+  position: relative;
+  left: 20px;
+  top: 8px;
+}
+#spacebar {
+  height: 20px;
+  width: 85px;
+}
+.haut {
+  position: relative;
+  left: 70px;
+  bottom: 10px;
+}
+
+/* TEXTE ----------------- */
+
+.text {
+  background-color: rgba(0, 0, 0, 0.616);
+  width: 530px;
+  height: 140px;
+  border: 2px solid white;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  margin-right: 100px;
+  margin-left: 30px;
+}
+.element {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------- ELEMENTS CANVAS -------------------------- */
+
+#shibacoin {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+h3 {
+  font-size: 22px;
+}
+#dede {
+  width: 200px;
+  height: 140px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#sdf {
+  width: 200px;
+  height: 140px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/*---------------------- RESPONSIVE -------------------------- */
+
+@media only screen and (max-width: 1280px) {
+  body {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .title{
+    display: none;
+  }
+  h1{
+    display: none;
+  }
+  .info{
+    height: 220px;
+  }
+  .tools{
+    position: absolute;
+    left: 7px;
+    height: 220px;
+    bottom: 0;
+  }
+  .inventory{
+    position: absolute;
+    height: 180px;
+    bottom: 10px;
+    left: 2px;
+  }
+  .load{
+    position: absolute;
+    bottom: 100%;
+    left: 2px;
+  }
+  .bottomTools{
+    align-items: flex-start;
+    height: 220px;
+    justify-content: start;
+  }
+  .text{
+    margin-right: 5px;
+  }
+}
